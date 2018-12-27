@@ -26,13 +26,17 @@ h1 {
     background: rgb(148, 148, 148);
     text-shadow: #3b3b3b 2px 2px 2px, #3b3b3b 1px 1px 1px;
     font-family: 'Aleo', serif;
-    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: inset 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: inset 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
 }
 
 .black {
     color: black;
+    text-shadow: rgb(131, 131, 131) 2px 2px 2px, rgb(41, 41, 41) 1px 1px 1px;
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .white {
