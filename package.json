@@ -1,0 +1,24 @@
+{
+  "name": "puzzler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tymski/puzzle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tymski/puzzle/issues"
+  },
+  "homepage": "https://github.com/Tymski/puzzle#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "jsdom": "^13.1.0",
+    "request-promise": "^4.2.2"
+  }
+}
