@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/chessboard-0.3.0.min.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/chessboard-0.3.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -20,16 +20,5 @@
     <div id="board"></div>
     <h1>White to move</h1>
 </body>
-
-<script>
-position = '1r4k1/3q1ppp/1p6/p1pn4/3p2b1/1P1P2P1/P1PQ1PBP/2B1R1K1';
-
-    orientation = 'white';
-    var cfg = {
-        position,
-        orientation
-    };
-    var board = ChessBoard('board', cfg);
-</script>
 
 </html>

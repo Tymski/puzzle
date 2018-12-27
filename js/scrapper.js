@@ -4,19 +4,36 @@ const {
     JSDOM
 } = jsdom;
 
-const url = 'https://lichess.org/training/1';
+const baseUrl = 'https://lichess.org/training/';
 
-rp(url)
-    .then(function (html) {
-        const dom = new JSDOM(html, {
-            runScripts: "dangerously",
-            pretendToBeVisual: true
+async function logFen(puzzleID) {
+    let result = await rp(baseUrl + puzzleID)
+        .then(function (html) {
+            const dom = new JSDOM(html, {
+                runScripts: "dangerously",
+                pretendToBeVisual: true
+            });
+            var puzzle = dom.window.lichess.puzzle.data
+            var length = puzzle.puzzle.initialPly
+            var fen = puzzle.game.treeParts[length].fen;
+            console.log(fen);
+        })
+        .catch(function (err) {
+            console.log(err);
         });
-        var puzzle = dom.window.lichess.puzzle.data
-        var length = puzzle.puzzle.initialPly
-        var fen = puzzle.game.treeParts[length].fen;
-        console.log(fen);
-    })
-    .catch(function (err) {
-        console.log(err);
-    });
+    return result;
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+var iterator = 1;
+async function callSequence() {
+    while (true) {
+        await logFen(iterator++);
+        await sleep(20000);
+    }
+}
+
+callSequence();
