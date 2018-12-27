@@ -14,11 +14,18 @@ setTimeout(() => {
 }, timePerPuzzle + 200);
 
 // board stuff
-fen = '8/8/6Rp/1ppPk3/p3Pp2/2P1nP2/P6P/2K5 w - - 2 46';
+var fen = getFen();
 
 color = fen.split(" ")[1];
-if (color == "w") color = "white";
-if (color == "b") color = "black";
+if (color == "w") {
+    color = "white";
+}
+if (color == "b") {
+    color = "black";
+    colorElement.innerHTML = "Black to move";
+    colorElement.classList.add("black");
+    titleElement.classList.add("black");
+}
 
 orientation = 'white';
 var cfg = {
