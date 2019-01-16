@@ -8,12 +8,13 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
+    background-color: rgb(29, 29, 29);
 }
 
 #timeBar {
     max-width: 100%;
-    height: 1%;
-    background-color: rgb(192, 51, 51);
+    height: 1.5%;
+    background-color: #768d00;
 }
 
 #board {
@@ -22,24 +23,30 @@ body {
     background-color: rgb(30, 30, 30);
 }
 
-#board>div>div{
+#board > div > div {
     margin: 0 auto;
+    width: 100%;
 }
 
 h1 {
     width: 100%;
-    color: #FFFFFF;
+    color: #ffffff;
+    background: #4f5961;
     background: rgb(148, 148, 148);
     text-shadow: #3b3b3b 2px 2px 2px, #3b3b3b 1px 1px 1px;
-    font-family: 'Aleo', serif;
+    font-family: "Aleo", serif;
+    font-family: noto sans, lucida grande, lucida sans unicode, Geneva, Verdana, Sans-Serif;
+    font-weight: 300;
+    text-align: center;
     -webkit-box-shadow: inset 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
     -moz-box-shadow: inset 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
     box-shadow: inset 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+    
 }
 
 .black {
     color: black;
-    text-shadow: rgb(131, 131, 131) 2px 2px 2px, rgb(41, 41, 41) 1px 1px 1px;
+    text-shadow: rgb(77, 77, 77) 2px 2px 2px, rgb(41, 41, 41) 1px 1px 1px; 
     -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
