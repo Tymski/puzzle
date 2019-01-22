@@ -1,5 +1,5 @@
 // Timing stuff
-timePerPuzzle = 1000 * 60 * 5;
+timePerPuzzle = 1000 * 60 * 3.5;
 elapsedTime = 0;
 
 setTimeout(() => {
